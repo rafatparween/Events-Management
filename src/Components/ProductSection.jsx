@@ -49,25 +49,25 @@ const ProductSection = () => {
               <Grid item xs={12} sm={6} md={3} key={idx}>
                 <Card
                   sx={{
-                    width: 281, // Set width of the card
-                    height: 330, // Set height of the card
+                    width: 281, 
+                    height: 330, 
                     borderRadius: 2,
                     overflow: "hidden",
                     transition: "transform 0.3s, box-shadow 0.3s",
                     boxShadow: 3,
                     "&:hover": {
-                      transform: "scale(1.05)", // Slightly scale on hover
-                      boxShadow: 6, // More shadow on hover
+                      transform: "scale(1.05)", 
+                      boxShadow: 6, 
                     },
                   }}
                 >
                   <CardMedia
                     component="img"
-                    height="275" // Image height set to 300px
-                    width="100%"  // Full width of the card
+                    height="275" 
+                    width="100%"  
                     image={item.image}
                     alt={item.title}
-                    sx={{ objectFit: "cover" }}  // Ensures image covers the area
+                    sx={{ objectFit: "cover" }}  
                   />
                   <CardContent sx={{ padding: 2 }}>
                     <Typography variant="body1" sx={{ fontWeight: "bold", fontSize: "1rem", color: "#333" }}>
