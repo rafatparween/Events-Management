@@ -40,7 +40,7 @@ const ProductSection = () => {
             <Typography variant="h6" sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#333" }}>
               {section.category}
             </Typography>
-            <Button variant="text" sx={{ color: "red", fontWeight: "bold", fontSize: "1rem" }}>
+            <Button variant="text" sx={{ color: "#E5097F", fontWeight: "bold", fontSize: "1rem" }}>
               View All
             </Button>
           </Box>

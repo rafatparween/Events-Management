@@ -85,7 +85,7 @@ function SliderBar() {
             padding: "10px 20px",
           }}
         >
-          Valentine's Day Invitations
+          Birthday Day Invitations
         </Button>
         <Button
           variant="contained"
