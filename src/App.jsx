@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Navbar from './Components/Navbar';
-import SliderBar from './Components/SliderBar';
-import ProductSection from './Components/ProductSection';
 import Footer from './Components/Footer';
+import Login from './Login/Login';
+import Home from './Components/Home/Home';
+import Signup from './Signup/Signup';
+import Contact from './Contact/Contact';
+import About from './About/About';
 // import Header from './Components/Header';
 
 
@@ -24,21 +26,23 @@ const theme = createTheme({
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <Box>
-          <Navbar />
-          <Box sx={{ width: "100vw", overflowX: "hidden", position: "relative" }}>
-            <SliderBar />
+      <Router>
+        <ThemeProvider theme={theme}>
+          <Box>
+            <Navbar />
           </Box>
-          {/* <Header/> */}
-        </Box>
-        <Box mt={4}> {/* Add margin-top here */}
-          <ProductSection />
-        </Box>
-        <Box>
-          <Footer/>
-        </Box>
-      </ThemeProvider>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Login' element={<Login />} />
+            <Route path='/Signup' element={<Signup />} />
+            <Route path='/Contact' element={<Contact />} />
+          </Routes>
+          <Box>
+            <Footer />
+          </Box>
+        </ThemeProvider>
+      </Router>
     </>
   );
 }
