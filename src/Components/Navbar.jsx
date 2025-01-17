@@ -181,7 +181,7 @@ const Navbar = () => {
             { name: "Home", path: "/" },
             { name: "About", path: "/About" },
             { name: "Events", path: "/Events" },
-            { name: "Gallery", path: "/gallery" },
+            // { name: "Gallery", path: "/gallery" },
             { name: "Contact", path: "/Contact" },
             { name: "Signup", path: "/signup" },
             { name: "Login", path: "/Login" },

@@ -21,10 +21,10 @@ const Footer = () => {
         {/* Left Section */}
         <Grid item xs={12} md={6}>
           <Typography variant="h6" gutterBottom>
-            Melodia Event Management
+            Event Management
           </Typography>
           <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-          Melodia Event Management is an ISO 9001:2015 Certified Event Management Company based in Kerala, India, specializing in organizing a wide range of events. Whether it's a corporate function, wedding, party, or a large-scale conference, we take care of every detail to ensure your event is flawless. Our experienced team offers end-to-end event solutions, including conceptualization, planning, execution, and post-event support.
+        Event Management is an ISO 9001:2015 Certified Event Management Company based in Kerala, India, specializing in organizing a wide range of events. Whether it's a corporate function, wedding, party, or a large-scale conference, we take care of every detail to ensure your event is flawless. Our experienced team offers end-to-end event solutions, including conceptualization, planning, execution, and post-event support.
 
 We offer personalized services tailored to your specific needs and budget, ensuring that every moment is thoughtfully crafted. Our goal is to provide innovative and creative ideas, smooth logistics, and seamless coordination, making your event truly memorable and stress-free. From venue selection and décor to catering, entertainment, and more, Melodia Event Management is here to bring your vision to life.</Typography>
           <Box sx={{ mt: 2 }}>
@@ -127,7 +127,7 @@ We offer personalized services tailored to your specific needs and budget, ensur
           pt: 2,
         }}
       >
-        © 2008–2025 Melodia Event Management. All Rights Reserved.
+        © 2008–2025 ijstartprinter. All Rights Reserved.
       </Typography>
     </Box>
   );

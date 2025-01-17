@@ -9,6 +9,7 @@ import Home from './Components/Home/Home';
 import Signup from './Signup/Signup';
 import Contact from './Contact/Contact';
 import About from './About/About';
+import Events from './Events/Events';
 // import Header from './Components/Header';
 
 
@@ -37,6 +38,7 @@ function App() {
             <Route path='/Login' element={<Login />} />
             <Route path='/Signup' element={<Signup />} />
             <Route path='/Contact' element={<Contact />} />
+            <Route path='/Events' element={<Events/>}/>
           </Routes>
           <Box>
             <Footer />

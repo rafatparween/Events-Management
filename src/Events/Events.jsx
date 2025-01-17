@@ -1,109 +1,132 @@
-import React from "react";
-import { Card, CardContent, Typography, Grid, Button } from "@mui/material";
-import Slider from "react-slick";
+import React from 'react';
+import { Container, Grid, Typography, Button, CardMedia } from '@mui/material';
+import EventSlider from './EventSlider';
+import SomeContent from './SomeContent';
 
-// Carousel settings
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
-
-const Events = () => {
+function Events() {
   return (
-    <div style={{ padding: "20px" }}>
-      {/* Big Content Slider with Images */}
-      <div style={{ marginBottom: "40px" }}>
-        <Slider {...settings}>
-          {/* <div>
-            <img
-              src="https://via.placeholder.com/1200x400/0000FF/808080?text=Event+Image+1"
-              alt="Event 1"
-              style={{ width: "100%", height: "400px", objectFit: "cover" }}
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/1200x400/FF5733/808080?text=Event+Image+2"
-              alt="Event 2"
-              style={{ width: "100%", height: "400px", objectFit: "cover" }}
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/1200x400/008000/808080?text=Event+Image+3"
-              alt="Event 3"
-              style={{ width: "100%", height: "400px", objectFit: "cover" }}
-            />
-          </div> */}
-        </Slider>
-      </div>
+    <>
+    <EventSlider/>
+    <Container>
+      {/* Header Section */}
+      <Grid container spacing={4} sx={{ mt: 4, color: 'black',marginTop:10 }}>
+  <Grid item xs={12} md={6}>
+    <Typography variant="h4" gutterBottom sx={{ color: '#e5097f' }}>
+      LEADING EVENT MANAGEMENT SERVICES IN DELHI
+    </Typography>
+    <Typography variant="body1" paragraph>
+      Are you looking to host an event that will leave a lasting impression? Our event management services in Delhi are designed to make your special occasion truly unforgettable. From the initial planning stages to the final execution, we ensure every detail is meticulously handled.
+    </Typography>
+    <Typography variant="body1" paragraph>
+      We offer a comprehensive range of event management services, including corporate events, product launches, conferences, weddings, private parties, and cultural festivals. Our dedicated team of professionals works closely with you to understand your vision and transform it into reality.
+    </Typography>
+    <Typography variant="body1" paragraph>
+      Our extensive network of venues and vendors in Delhi ensures that we can provide the perfect setting and resources for any type of event. From elegant banquet halls to open-air gardens, we help you select the ideal location that matches your style and budget.
+    </Typography>
+    {/* <Typography variant="body1" paragraph>
+      We pride ourselves on our attention to detail and commitment to excellence. Our team handles every aspect of event planning, including theme development, decoration, catering, entertainment, and technical support. This allows you to relax and enjoy your event without any stress.
+    </Typography>
+    <Typography variant="body1" paragraph>
+      Our experience in managing both large-scale events and intimate gatherings enables us to adapt to your needs, ensuring a seamless and memorable experience for you and your guests. Trust us to make your event in Delhi a remarkable success.
+    </Typography>
+    <Typography variant="body1" paragraph>
+      Ready to turn your event vision into reality? Contact us today to discuss your requirements and discover how our expert event management services can elevate your occasion to new heights.
+    </Typography> */}
+  </Grid>
+  <Grid item xs={12} md={6}>
+    <CardMedia
+      component="video"
+      controls
+      image="https://cdn.pixabay.com/video/2018/04/26/15826-266811435_tiny.mp4" 
+      alt="Event video"
+      sx={{ borderRadius: 2, width: '100%' }}
+    />
+  </Grid>
+</Grid>
 
-      {/* Event Title and Description */}
-      <Typography variant="h3" gutterBottom align="center">
-        Upcoming Tech Innovators Conference 2025
-      </Typography>
-      <Typography variant="body1" paragraph align="center">
-        Join us for the most anticipated tech event of the year! The Tech Innovators Conference is a global gathering of industry leaders, entrepreneurs, and technology enthusiasts. Come experience the latest in innovation, technology trends, and future-forward discussions.
-      </Typography>
-
-      {/* Event Details */}
-      <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={12} sm={6} md={4}>
-          <Card>
-            <CardContent>
-              <Typography variant="h5">Event Details</Typography>
-              <Typography color="textSecondary">Date: March 12, 2025</Typography>
-              <Typography color="textSecondary">Location: Silicon Valley Conference Center</Typography>
-              <Typography variant="body2" paragraph>
-                This conference will feature exciting keynote speakers, panel discussions, and hands-on workshops on topics like AI, Machine Learning, Blockchain, and more. It’s a must-attend event for anyone in tech.
-              </Typography>
-              <Typography variant="body2">
-                Highlights:
-                <ul>
-                  <li>Keynote speakers from top tech companies</li>
-                  <li>Workshops on AI and Machine Learning</li>
-                  <li>Networking with industry leaders</li>
-                </ul>
-              </Typography>
-            </CardContent>
-            <Button variant="contained" color="primary" fullWidth>
-              Register Now
-            </Button>
-          </Card>
+      {/* Wedding Section */}
+      <Grid container spacing={4} sx={{ mt: 4 }}>
+        <Grid item xs={12} md={6} container spacing={1}>
+          <Grid item xs={6}>
+            <CardMedia
+              component="img"
+              image="/eventone.webp" // Replace with actual image source
+              alt="Event image 1"
+              sx={{ borderRadius: 2, width: '100%' }}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <CardMedia
+              component="img"
+              image="/eventtwo.jpg" // Replace with actual image source
+              alt="Event image 2"
+              sx={{ borderRadius: 2, width: '100%' }}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <CardMedia
+              component="img"
+              image="eventthree.webp" // Replace with actual image source
+              alt="Event image 3"
+              sx={{ borderRadius: 2, width: '100%' }}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <CardMedia
+              component="img"
+              image="/eventfour.webp" // Replace with actual image source
+              alt="Event image 4"
+              sx={{ borderRadius: 2, width: '100%' }}
+            />
+          </Grid>
         </Grid>
-      </Grid>
+        <Grid item xs={12} md={6} sx={{ color: 'black' }}>
+  <Typography variant="h5" gutterBottom sx={{ color: '#e5097f' }}>
+    UNLOCK YOUR DREAM EVENT IN DELHI
+  </Typography>
+  <Typography variant="body1" paragraph>
+    Discover unparalleled event management services in Delhi, where every occasion is transformed into a memorable experience. Whether you envision a grand corporate gathering, a lavish wedding, or an intimate personal celebration, our team brings your vision to life with precision and creativity.
+  </Typography>
+  <Typography variant="body1" paragraph>
+    Our event management services in Delhi include comprehensive planning, venue selection, theme development, and flawless execution. We pride ourselves on delivering events that are not only seamless but also reflect the unique style and personality of each client.
+  </Typography>
+  <Typography variant="body1" paragraph>
+    From the bustling streets of Connaught Place to the serene venues in South Delhi, we have the expertise to manage events in any setting. Our extensive network of vendors and deep knowledge of local customs ensure that every detail is handled with care and expertise.
+  </Typography>
+  <Button variant="contained" sx={{ mt: 2, mr: 2 }} >
+    Talk to Expert
+  </Button>
+  <Button variant="outlined" sx={{ mt: 2 }}>
+    WhatsApp us
+  </Button>
+</Grid>
 
-      {/* Embedded Video for Event */}
-      <div style={{ marginTop: "40px", textAlign: "center" }}>
-        <Typography variant="h4" gutterBottom>
-          Watch Our Event Preview
-        </Typography>
-        <iframe
-          width="80%"
-          height="500"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your event video URL
-          title="Event Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
+{/* Additional Content Section */}
+<Grid container spacing={4} sx={{ mt: 4 }}>
+  <Grid item xs={12}>
+    <Typography variant="h5" gutterBottom>
+      Why Choose Us for Event Management in Delhi?
+    </Typography>
+    <Typography variant="body1" paragraph>
+      Our event management services in Delhi are tailored to meet the diverse needs of our clients. With a keen eye for detail and a passion for excellence, we ensure that every event is executed flawlessly, leaving a lasting impression on your guests.
+    </Typography>
+    <Typography variant="body1" paragraph>
+      We understand that each event is unique, and our customized approach allows us to create bespoke experiences that cater to your specific requirements. From concept development to on-site coordination, we manage every aspect of your event to ensure its success.
+    </Typography>
+    <Typography variant="body1" paragraph>
+      Our commitment to quality and customer satisfaction has earned us a reputation as one of the leading event management providers in Delhi. Whether you're planning a corporate event, a wedding, or a cultural celebration, our team is dedicated to making your event a resounding success.
+    </Typography>
+    <Typography variant="body1" paragraph>
+      Let us help you create unforgettable moments in the vibrant city of Delhi. Contact us today to discuss how our event management expertise can bring your vision to life.
+    </Typography>
+  </Grid>
+</Grid>
+</Grid>
 
-      {/* Call to Action */}
-      <div style={{ textAlign: "center", marginTop: "40px" }}>
-        <Typography variant="h4">Want to Host an Event with Us?</Typography>
-        <Typography variant="body1" paragraph>
-          If you're planning an event and would like to partner with us, we'd love to help. Reach out to us today to start planning an event that will leave a lasting impact!
-        </Typography>
-        <Button variant="contained" color="secondary" size="large">
-          Contact Us
-        </Button>
-      </div>
-    </div>
+    </Container>
+    <SomeContent/>
+    </>
   );
-};
+}
 
 export default Events;
