@@ -24,7 +24,14 @@ const products = [
 
 const SomeContent = () => {
   return (
-    <Box sx={{ maxWidth: "1200px", margin: "auto", padding: 3 ,marginTop:"-283px" }}>
+    <Box
+      sx={{
+        maxWidth: "1200px",
+        margin: "auto",
+        padding: 3,
+        marginTop: { xs: "-769px", sm: "-400px", md: "-200px", lg: "0px" }, // Responsive marginTop
+      }}
+    >
       {products.map((section, index) => (
         <Box key={index} sx={{ marginBottom: 5 }}>
           <Grid container spacing={3}>
