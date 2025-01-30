@@ -1,34 +1,73 @@
 import React from "react";
 import { Box, Typography, Grid, Card, CardMedia, CardContent, Button } from "@mui/material";
 
+// const products = [
+//   {
+//     category: "Best Seller Birthday Decorations",
+//     items: [
+//       { image: "/productone.jpg", title: "Lighings" },
+//       { image: "/producttwo.jpg", title: "House Warming" },
+//       { image: "/sunflower.jpg", title: "Naming Ceremony" },
+//       { image: "/producthappy.jpg", title: "Birthdays Planning" },
+//     ],
+//   },
+//   {
+//     category: "Welcome your Baby",
+//     items: [
+//       { image: "/producthaldi.jpg", title: "Half Saree" },
+//       { image: "/productbirthday.jpg", title: "Corporate Events" },
+//       { image: "/kattudhoti.jpg", title: "Dhoti Panche Kattu" },
+//       { image: "/furniture.jpg", title: "Furniture" },
+//     ],
+//   },
+//   {
+//     category: "Welcome your Baby",
+//     items: [
+//       { image: "/franchise.jpg", title: "PAN India Franchise" },
+//       { image: "/evening.jpg", title: "Canopy Furniture" },
+//       { image: "/christian.jpg", title: "Event of Christians" },
+//       { image: "/chiller.jpg", title: "Open Weddings" },
+//     ],
+//   },
+// ];
+
 const products = [
   {
     category: "Best Seller Birthday Decorations",
     items: [
-      { image: "/productone.jpg", title: "Lighings" },
-      { image: "/producttwo.jpg", title: "House Warming" },
-      { image: "/sunflower.jpg", title: "Naming Ceremony" },
-      { image: "/producthappy.jpg", title: "Birthdays Planning" },
+      { image: "/wsix.jpeg", title: "Lighings" },
+      { image: "/wtwo.jpeg", title: "Birthday" },
+      { image: "/wseven.jpeg", title: "Naming Ceremony" },
+      { image: "/weight.jpeg", title: "Birthdays Planning" },
     ],
   },
   {
-    category: "Welcome your Baby",
+    category: "Welcome to Birthday Party",
     items: [
-      { image: "/producthaldi.jpg", title: "Half Saree" },
-      { image: "/productbirthday.jpg", title: "Corporate Events" },
-      { image: "/kattudhoti.jpg", title: "Dhoti Panche Kattu" },
-      { image: "/furniture.jpg", title: "Furniture" },
+      { image: "/weleven.jpeg", title: "Birthday Party" },
+      { image: "/wthree.jpeg", title: "Cheers to 70 years" },
+      { image: "/wfour.jpeg", title: "Cedar" },
+      { image: "/wnine.jpeg", title: "Amyra's Birthday" },
     ],
   },
   {
-    category: "Welcome your Baby",
+    category: "Welcome to Birthday Party",
     items: [
-      { image: "/franchise.jpg", title: "PAN India Franchise" },
-      { image: "/evening.jpg", title: "Canopy Furniture" },
-      { image: "/christian.jpg", title: "Event of Christians" },
-      { image: "/chiller.jpg", title: "Open Weddings" },
+      { image: "/wfiveteen.jpeg", title: "Birthday" },
+      { image: "/wfourteen.jpeg", title: "Cheers to 50 years" },
+      { image: "/wone.jpeg", title: "Birthday" },
+      { image: "/wseventeen.jpeg", title: "Birthday Decoration" },
     ],
   },
+  // {
+  //   category: "Welcome to Birthday Party",
+  //   items: [
+  //     { image: "/wtherteen.jpeg", title: "Birthday" },
+  //     { image: "/wfive.jpeg", title: "Cheers to 50 years" },
+  //     { image: "/wone.jpeg", title: "Birthday" },
+  //     { image: "/wseventeen.jpeg", title: "Birthday Decoration" },
+  //   ],
+  // },
 ];
 
 const ProductSection = () => {
