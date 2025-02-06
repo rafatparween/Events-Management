@@ -3,7 +3,7 @@ import { Container, Grid, Typography, Button, CardMedia } from '@mui/material';
 import EventSlider from './EventSlider';
 import SomeContent from './SomeContent';
 
-function Events() {
+function PrinterSupport() {
   return (
     <>
       <EventSlider />
@@ -119,4 +119,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default PrinterSupport;

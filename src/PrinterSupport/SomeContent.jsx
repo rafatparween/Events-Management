@@ -29,7 +29,7 @@ const SomeContent = () => {
         maxWidth: "1200px",
         margin: "auto",
         padding: 3,
-        marginTop: { xs: "-769px", sm: "-400px", md: "-200px", lg: "0px" }, // Responsive marginTop
+        marginTop: { xs: "-769px", sm: "-400px", lg: "-326px" }, // Responsive marginTop
       }}
     >
       {products.map((section, index) => (

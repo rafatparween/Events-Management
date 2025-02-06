@@ -195,7 +195,7 @@ const Navbar = () => {
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/About" },
-            { name: "Events", path: "/Events" },
+            { name: "Printer Support", path: "/PrinterSupport" },
             { name: "Contact", path: "/Contact" },
             { name: "Signup", path: "/signup" },
             { name: "Login", path: "/Login" },
@@ -240,7 +240,7 @@ const Navbar = () => {
             {[
               { name: "Home", path: "/" },
               { name: "About", path: "/About" },
-              { name: "Events", path: "/Events" },
+              { name: "Printer Support", path: "/PrinterSupport" },
               { name: "Contact", path: "/Contact" },
               { name: "Signup", path: "/signup" },
               { name: "Login", path: "/Login" },
