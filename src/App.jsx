@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route ,useLocation  } from 'react-router-dom';
+import { useEffect } from "react";
 import './App.css'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -22,6 +23,7 @@ const theme = createTheme({
   },
 });
 
+
 function App() {
   
   return (
@@ -37,7 +39,6 @@ function App() {
             <Route path='/Login' element={<Login />} />
             <Route path='/Signup' element={<Signup />} />
             <Route path='/Contact' element={<Contact />} />
-            {/* <Route path='/Events' element={<Events/>}/> */}
             <Route path='/PrinterSupport'element={<PrinterSupport/>}/>
           </Routes>
           <Box>
